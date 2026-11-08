@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "robocon-nuwa-rules": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/ye-ling-xuan/robocon-nuwa-rules",
+        "robocon-nuwa-mcp"
+      ]
+    }
+  }
+}

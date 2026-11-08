@@ -1,0 +1,6 @@
+include README.md AGENT_INSTALL.md SKILL.md THIRD_PARTY_NOTICES.md mcp.json.example
+include uv.lock package.json package-lock.json
+recursive-include scripts *.py
+recursive-include tests *.py *.cjs *.md
+recursive-include docs *.png *.md
+recursive-exclude * __pycache__ *.py[cod]

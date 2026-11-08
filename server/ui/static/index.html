@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153e35">
+  <title>女娲补天 · 规则工作台</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/style.css">
+  <script type="module" src="/static/app.js"></script>
+</head>
+<body>
+  <svg class="icon-defs" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M12 19V5m-6 6 6-6 6 6"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="m14 6-6 6 6 6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="m10 6 6 6-6 6"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6v15M3 4c3-1 6 0 9 2 3-2 6-3 9-2v15c-3-1-6 0-9 2-3-2-6-3-9-2Z"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-fit" viewBox="0 0 24 24"><path d="M4 5v14M20 5v14M6 12h12M9 9l-3 3 3 3m6-6 3 3-3 3"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3Z"/></symbol>
+  </defs></svg>
+  <header class="app-header">
+    <a class="brand" href="#" aria-label="女娲补天规则工作台">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+      <span><strong>女娲补天</strong><span class="brand-caption">ROBOCON · RULES WORKSPACE</span></span>
+    </a>
+    <div class="header-middle"><span class="workspace-tab">规则工作台</span><span class="version-tag">V3</span></div>
+    <div class="connection" id="connection" aria-live="polite"><span class="status-dot"></span><span id="connection-text">正在连接</span></div>
+  </header>
+  <main class="workspace" id="workspace">
+    <section class="chat-panel" aria-label="规则对话">
+      <div class="panel-heading"><div><span class="eyebrow">CONVERSATION</span><h1>规则对话</h1></div><span class="subtle-tag">与 Agent 同步</span></div>
+      <div class="conversation" id="conversation" aria-live="polite" aria-relevant="additions text">
+        <div class="empty-state" id="empty-state">
+          <div class="empty-icon"><svg><use href="#i-spark"/></svg></div>
+          <span class="eyebrow">每一个答案，都有原文可循</span>
+          <h2>专注提问，<br>让规则跟上思路。</h2>
+          <p>在你的 Agent 里提问，问答会出现在这里。<br>点击答案中的引用，即可定位规则原文。</p>
+          <div class="suggestions"><span>可以从这些问题开始</span>
+            <button class="suggestion" data-question="TR拿着五色石还能拿塔基吗？">TR 拿着五色石还能拿塔基吗？<span>↗</span></button>
+            <button class="suggestion" data-question="L2 塔顶多少分？">L2 塔顶多少分？<span>↗</span></button>
+            <button class="suggestion" data-question="TR 携带 4 个塔基会怎样？">TR 携带 4 个塔基会怎样？<span>↗</span></button>
+          </div>
+        </div>
+        <div id="turns"></div>
+      </div>
+      <form class="composer" id="question-form">
+        <div class="composer-label"><label for="question-input">继续提问</label><span id="input-mode">在 Agent 中继续</span></div>
+        <div class="input-wrap"><textarea id="question-input" rows="2" maxlength="4000" placeholder="请在 Agent 聊天框提问…" disabled></textarea><button id="send-button" type="submit" aria-label="发送问题" disabled><svg><use href="#i-arrow"/></svg></button></div>
+        <p class="input-hint" id="input-hint">请在 Agent 聊天框提问，回答会自动同步到这里。</p>
+      </form>
+    </section>
+    <div class="splitter" id="splitter" role="separator" tabindex="0" aria-label="调整对话与原文宽度" aria-orientation="vertical" aria-valuenow="34" aria-valuemin="22" aria-valuemax="60"><span></span></div>
+    <section class="document-panel" aria-label="PDF 规则原文">
+      <div class="document-heading"><div class="document-title"><svg><use href="#i-book"/></svg><div><h2>规则原文</h2><p>第二十六届全国大学生机器人大赛 · 竞技赛规则 V3</p></div></div><span class="subtle-tag paper-tag">官方规则 · 本地副本</span></div>
+      <div class="pdf-toolbar">
+        <div class="page-controls"><button id="prev-page" class="icon-button" aria-label="上一页"><svg><use href="#i-left"/></svg></button><label class="page-number"><input id="page-input" type="number" min="1" value="1" aria-label="PDF 物理页码"><span>/ <span id="page-total">33</span></span></label><button id="next-page" class="icon-button" aria-label="下一页"><svg><use href="#i-right"/></svg></button></div>
+        <span class="toolbar-divider"></span>
+        <div class="zoom-controls"><button id="zoom-out" class="icon-button" aria-label="缩小"><svg><use href="#i-minus"/></svg></button><span id="zoom-label">100%</span><button id="zoom-in" class="icon-button" aria-label="放大"><svg><use href="#i-plus"/></svg></button></div>
+        <button id="fit-width" class="text-button fit-button"><svg><use href="#i-fit"/></svg><span>适应宽度</span></button>
+        <a id="download-pdf" class="download-link" download="ROBOCON-女娲补天-V3.pdf">下载原文 ↗</a>
+      </div>
+      <div class="source-bar" id="source-bar"><span class="source-marker"></span><span id="source-label">等待引用定位</span><span id="source-excerpt">回答后，原文将在这里自动翻页并高亮</span><span id="cross-page-note" hidden>条款跨页</span><button id="clear-highlight" class="icon-button" aria-label="清除高亮" title="清除高亮" hidden><svg><use href="#i-close"/></svg></button></div>
+      <div class="pdf-viewer" id="pdf-viewer" tabindex="0" aria-label="规则 PDF 阅读区"><div class="viewer-message" id="viewer-message"><span class="loading-ring"></span><p>正在载入本地规则原文…</p></div><div id="pdf-pages"></div></div>
+      <div class="document-footer"><span id="document-status">PDF 物理页码 · 从 1 开始</span><span>点击引用，即刻回到依据</span></div>
+    </section>
+  </main>
+  <footer class="app-footer"><span><span class="tiny-dot"></span>本地会话 · 规则可离线查阅</span><span id="dataset-label">女娲补天 V3</span></footer>
+  <div class="toast" id="toast" role="status" hidden></div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+tmp/
+node_modules/
+.DS_Store
+Thumbs.db
+/第二十六届全国大学生机器人大赛女娲补天竞技赛规则V3.pdf

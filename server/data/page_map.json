@@ -1,0 +1,242 @@
+{
+  "version": "V3",
+  "source_title": "第二十六届全国大学生机器人大赛女娲补天竞技赛规则V3",
+  "revision_date": "2026-11-05",
+  "pdf_sha256": "825e84cf2695a5cfc65d98a9f3f8a8c4056222900da15f0f629a453b5df1e385",
+  "page_count": 33,
+  "coordinate_system": "pymupdf-top-left-points",
+  "note": "page 为从 1 开始的 PDF 物理页码；术语 2.n 对应第 2 节表格序号 n。解析仅为初稿，更新后须人工校对。",
+  "pages": [
+    {
+      "physical_page": 1,
+      "printed_page": null,
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 2,
+      "printed_page": "2",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 3,
+      "printed_page": "3",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 4,
+      "printed_page": "4",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 5,
+      "printed_page": "5",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 6,
+      "printed_page": "6",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 7,
+      "printed_page": "7",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 8,
+      "printed_page": "8",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 9,
+      "printed_page": "9",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 10,
+      "printed_page": "10",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 11,
+      "printed_page": "11",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 12,
+      "printed_page": "12",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 13,
+      "printed_page": "13",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 14,
+      "printed_page": "14",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 15,
+      "printed_page": "15",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 16,
+      "printed_page": "16",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 17,
+      "printed_page": "17",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 18,
+      "printed_page": "18",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 19,
+      "printed_page": "19",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 20,
+      "printed_page": "20",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 21,
+      "printed_page": "21",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 22,
+      "printed_page": "22",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 23,
+      "printed_page": "23",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 24,
+      "printed_page": "24",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 25,
+      "printed_page": "25",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 26,
+      "printed_page": "26",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 27,
+      "printed_page": "27",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 28,
+      "printed_page": "28",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 29,
+      "printed_page": "29",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 30,
+      "printed_page": "30",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 31,
+      "printed_page": "31",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 32,
+      "printed_page": "32",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    },
+    {
+      "physical_page": 33,
+      "printed_page": "33",
+      "width": 595.32,
+      "height": 841.92,
+      "rotation": 0
+    }
+  ]
+}

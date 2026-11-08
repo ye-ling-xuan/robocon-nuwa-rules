@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robocon-nuwa-rules"
+version = "0.1.0"
+description = "Offline ROBOCON Nuwa V3 rules MCP with a synchronized local PDF workspace"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "mcp>=1.22,<2",
+  "fastapi>=0.115,<1",
+  "uvicorn>=0.34,<1",
+  "pymupdf>=1.25,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "pytest-asyncio>=0.25,<2", "httpx>=0.28,<1", "build>=1.2", "pyyaml>=6"]
+
+[project.scripts]
+robocon-nuwa-mcp = "server.mcp_server:main"
+
+[tool.setuptools.packages.find]
+include = ["server*"]
+
+[tool.setuptools.package-data]
+server = ["data/*", "ui/static/*", "ui/static/pdfjs/*", "ui/static/pdfjs/cmaps/*", "ui/static/pdfjs/standard_fonts/*", "ui/static/pdfjs/wasm/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
